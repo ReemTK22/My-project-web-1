@@ -20,6 +20,7 @@ text-align: center;
     letter-spacing: 1px;
 
 }
+
  img{
 
     width: 100%;
@@ -51,7 +52,7 @@ text-align: center;
 
 h1{
 
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
     text-transform: capitalize;
 
  }

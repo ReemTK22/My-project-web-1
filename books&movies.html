@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOOKS & MOVIES</title>
+    <link rel="stylesheet" href="nav.css">
+</head>
+<body>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    
+    #navbar {
+      overflow: hidden;
+      background-color: black;
+    }
+    
+    #navbar a {
+      float: left;
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 20px;
+    }
+    
+    #navbar a:hover {
+      background-color: darkred;
+      color: black;
+    }
+    
+    #navbar a.hover {
+      background-color: darkred;
+    }
+    
+    .content {
+      padding: 16px;
+    }
+    
+    .sticky {
+      position: fixed;
+      top: 10;
+      width: 100%;
+    }
+    
+    .sticky + .content {
+      padding-top: 60px;
+    }
+    </style>
+    <body>
+    
+    
+        <div id="navbar">
+            <a class="active" href="/index.html">HOME</a>
+              <a href="/history.html">HISTORY</a> 
+              <a href="/victims.html">VICTIMS & WITNESSES </a>
+              <a href="/suspects.html">SUSPECTS </a>
+              <a href="/letters.html">LETTERS </a>
+              <a href="/books&movies.html">BOOKS & MOVIES</a>
+              <a href="/contact.html">CONTACT</a>
+              <a href="/feedback.html">FEEDBACK</a>
+            </div>
+    
+    <div class="content">
+
+        <script>
+            window.onscroll = function() {myFunction()};
+            
+            var navbar = document.getElementById("navbar");
+            var sticky = navbar.offsetTop;
+            
+            function myFunction() {
+              if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+              } else {
+                navbar.classList.remove("sticky");
+              }
+            }
+            </script>
+
+</body>
+</html>
